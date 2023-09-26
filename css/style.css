@@ -1,0 +1,205 @@
+.result-summary {
+  margin: 9.6rem auto;
+  max-width: 63rem;
+  box-shadow: 10px 10px 20px 7px hsla(241, 100%, 89%, 0.152);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* RESULT SECTION */
+.result {
+  text-align: center;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(120, 87, 255),
+    rgb(46, 43, 233)
+  );
+}
+
+.result-header,
+.summary-header {
+  color: rgb(235, 241, 255, 0.593);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.result-section strong {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.result-section {
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 100px;
+
+  margin: 0 auto 2.4rem auto;
+}
+
+.overall-score {
+  color: rgba(235, 241, 255, 0.593);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.result-remark {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.6rem;
+}
+
+.result-comment {
+  color: rgba(235, 241, 255, 0.593);
+}
+
+/* SUMMARY SECTION */
+.summary-header {
+  color: hsl(224, 30%, 27%);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  row-gap: 1.8rem;
+}
+
+.icon {
+  font-weight: 700;
+}
+
+.summary-list {
+  padding: 1.2rem 1rem;
+  border-radius: 7px;
+}
+
+.summary-list li {
+  gap: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-list--name {
+  flex: 2;
+  font-weight: 700;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.07);
+}
+
+.summary-list--reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.07);
+}
+
+.summary-list--memory {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.07);
+}
+
+.summary-list--verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.07);
+}
+
+.summary-list--visual {
+  color: hsl(234, 85%, 45%);
+}
+
+.list-score {
+  font-weight: 700;
+}
+
+.list-overall-score {
+  color: hsla(224, 30%, 27%, 0.291);
+}
+
+.continue:link,
+.continue:visited {
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  display: flex;
+  margin-top: 3rem;
+  text-decoration: none;
+  color: hsl(221, 100%, 96%);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  z-index: 1;
+
+  /* TRANSITION DID NOT WORK */
+  /* transition: background-image 10s linear; */
+}
+
+/* TRANSITION WORKED */
+.continue::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(120, 87, 255),
+    rgb(46, 43, 233)
+  );
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.continue:hover::before,
+.continue:active::before {
+  opacity: 1;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 5rem 0 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* TRANSITION DID NOT WORK */
+/* .continue:hover,
+.continue:active {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(120, 87, 255),
+    rgb(46, 43, 233)
+  );
+} */

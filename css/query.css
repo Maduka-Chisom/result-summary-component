@@ -1,0 +1,58 @@
+/* ************************* */
+/* screens below 1200 (landscape tablets)*/
+/* ************************* */
+@media (max-width: 75em) {
+  html {
+    /* 9px divided by 16px  */
+    font-size: 56.25%;
+  }
+
+  .result-summary {
+    margin: 9.6rem auto;
+  }
+}
+/* ************************* */
+/* screens below 944 (tablets)*/
+/* ************************* */
+
+/* @media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% 
+    font-size: 50%;
+  }
+} */
+
+/* ************************* */
+/* screens below 550 (tablets)*/
+/* ************************* */
+/* @media (max-width: 34em) {
+} */
+
+/* ************************* */
+/* screens below 375 (mobile design)*/
+/* ************************* */
+@media (max-width: 32em) {
+  .result-summary {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    overflow: visible;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .result {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .continue:link,
+  .continue:visited {
+    padding: 1.7rem;
+  }
+
+  .summary-list {
+    padding: 2.5rem 1.5rem;
+  }
+}
