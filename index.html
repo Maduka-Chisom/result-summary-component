@@ -26,16 +26,13 @@
     <style></style>
   </head>
   <body>
-    <div class="mango"></div>
-    <div class="container">
+    <main>
       <div class="result-summary grid grid-2-cols">
         <div class="result padding-helper-md">
-          <header>
-            <p class="result-header">Your Result</p>
-          </header>
+          <h1 class="result-header">Your Result</h1>
 
           <div class="result-section">
-            <strong>76</strong>
+            <p>76</p>
             <p class="overall-score">of 100</p>
           </div>
 
@@ -46,11 +43,14 @@
         </div>
 
         <div class="summary padding-helper-md">
-          <header>
-            <p class="summary-header">Summary</p>
-          </header>
+          <h2 class="summary-header">Summary</h2>
 
           <ul class="grid">
+            <!-- Error: Element div not allowed as child of element ul in this context. 
+            
+             cc: html validator
+            -->
+
             <div class="summary-list reaction">
               <li>
                 <svg
@@ -117,6 +117,12 @@
                 >
               </li>
             </div>
+
+            <!-- Error: Element div not allowed as child of element ul in this context.  
+            
+            cc: html validator
+            -->
+
             <div class="summary-list verbal">
               <li>
                 <svg
@@ -187,6 +193,6 @@
           >Frontend Mentor</a
         >. Coded by <a href="#">Maduka Chisom</a>.
       </div>
-    </div>
+    </main>
   </body>
 </html>

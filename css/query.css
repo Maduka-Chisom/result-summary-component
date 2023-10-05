@@ -1,32 +1,12 @@
 /* ************************* */
-/* screens below 1200 (landscape tablets)*/
+/* screens below 1200 (landscape tablets)
 /* ************************* */
 @media (max-width: 75em) {
   html {
     /* 9px divided by 16px  */
     font-size: 56.25%;
   }
-
-  .result-summary {
-    margin: 9.6rem auto;
-  }
 }
-/* ************************* */
-/* screens below 944 (tablets)*/
-/* ************************* */
-
-/* @media (max-width: 59em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% 
-    font-size: 50%;
-  }
-} */
-
-/* ************************* */
-/* screens below 550 (tablets)*/
-/* ************************* */
-/* @media (max-width: 34em) {
-} */
 
 /* ************************* */
 /* screens below 375 (mobile design)*/

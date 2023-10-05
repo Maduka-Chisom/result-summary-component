@@ -1,5 +1,5 @@
 .result-summary {
-  margin: 9.6rem auto;
+  /* margin: 9.6rem auto; */
   max-width: 63rem;
   box-shadow: 10px 10px 20px 7px hsla(241, 100%, 89%, 0.152);
   border-radius: 20px;
@@ -25,7 +25,7 @@
   margin-bottom: 2.4rem;
 }
 
-.result-section strong {
+.result-section p:first-child {
   font-size: 5.2rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
